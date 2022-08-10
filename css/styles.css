@@ -67,7 +67,7 @@ body {
   padding-right: 10px;
 }
 
-.phone::before{
+.phone::before {
   display: inline-block;
   content: "";
   width: 10px;
@@ -131,11 +131,11 @@ body {
   flex-wrap: wrap;
 }
 
-.item{
+.item {
   list-style: none;
 }
 
-.item:nth-child(-n + 4){
+.item:nth-child(-n + 4) {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -173,12 +173,11 @@ body {
   margin: 0 0 50px;
 }
 
-.wedo{
-  display:flex;
+.wedo {
+  display: flex;
   margin: 5.05px 211.84px 94px 215px;
   justify-content: space-between;
 }
-
 
 .images {
   display: flex;
@@ -188,19 +187,19 @@ body {
   justify-content: center;
 }
 
-.computer{
+.computer {
   background-image: url("../images/Computador-Tablet.jpg");
 }
 
-.cellphone{
+.cellphone {
   background-image: url("../images/Celular-Portatil.jpg");
 }
 
-.tablet{
+.tablet {
   background-image: url("../images/Tablet.jpg");
 }
 
-.images > p{
+.images > p {
   font-weight: 700;
   font-size: 14px;
   text-align: center;
@@ -208,7 +207,7 @@ body {
   background: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
-  margin:0px;
+  margin: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,28 +240,28 @@ body {
   padding: 30px 0 10px 0;
 }
 
-.photoperson > div:not(.social-icon){
+.photoperson > div:not(.social-icon) {
   padding-bottom: 16px;
 }
 
-.social-icon{
+.social-icon {
   display: flex;
   justify-content: space-between;
   margin: 0 32px 30px;
 }
 
-.circle{
+.circle {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
+  color: #afb1b8;
 }
 
 .circle:hover,
-.circle:focus, 
+.circle:focus,
 .circle:hover .icon,
 .circle:focus .icon {
   background-color: var(--brand-color);
@@ -274,25 +273,27 @@ body {
   margin: 0;
 }
 
-.client{
+.client {
   list-style: none;
   display: flex;
   padding: 0 215px;
   justify-content: space-between;
 }
 
-.client > li{
+.client > li {
   width: 170px;
   height: 81px;
   display: flex;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   margin: 0 0 151px 0;
   align-items: center;
   justify-content: center;
 }
 
-.client > li:nth-child(4){border: 1px solid #2196F3;}
+.client > li:nth-child(4) {
+  border: 1px solid #2196f3;
+}
 
 .last-part {
   background: var(--background);
@@ -328,9 +329,11 @@ body {
   text-decoration: none;
 }
 
-.final { margin: 0;}
+.final {
+  margin: 0;
+}
 
-.gray{
+.gray {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 15px 10px 0 0;
@@ -407,13 +410,3 @@ body {
   color: var(--text-light);
   padding-top: 75px;
 }
-
-
-
-
-
-
-
-
-
-
