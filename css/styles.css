@@ -59,7 +59,8 @@ body {
   margin-left: 30px;
 }
 
-.icon-envelope {
+.icon-envelope,
+.smarthphone {
   display: inline-block;
   content: "";
   width: 16px;
@@ -67,15 +68,9 @@ body {
   padding-right: 10px;
 }
 
-.phone::before {
-  display: inline-block;
-  content: "";
+.smarthphone {
   width: 10px;
   height: 16px;
-  background-size: contain;
-  background-image: url("../images/telefono_inteligente.svg");
-  padding-right: 10px;
-  background-repeat: no-repeat;
 }
 
 .upcontacts:hover,
@@ -83,6 +78,7 @@ body {
 .downcontacts:hover,
 .downcontacts:focus {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 .first-part {
@@ -95,6 +91,7 @@ body {
   gap: 30px;
   background: rgba(47, 48, 58, 0.4);
   background-image: url("../images/fondo.jpg");
+  background-blend-mode: soft-light;
 }
 
 .first-part .first-title {
@@ -133,6 +130,10 @@ body {
 
 .item {
   list-style: none;
+}
+.item svg {
+  width: 70px;
+  height: 70px;
 }
 
 .item:nth-child(-n + 4) {
@@ -231,6 +232,8 @@ body {
   text-align: center;
   width: 270px;
   background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -257,7 +260,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  fill: #afb1b8;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .circle:hover,
@@ -265,12 +273,13 @@ body {
 .circle:hover .icon,
 .circle:focus .icon {
   background-color: var(--brand-color);
-  color: #fff;
+  fill: #fff;
 }
 
 .clients {
   padding: 54px 0 44.02px 0;
   margin: 0;
+  color: var(--text-color);
 }
 
 .client {
@@ -280,7 +289,7 @@ body {
   justify-content: space-between;
 }
 
-.client > li {
+.client li {
   width: 170px;
   height: 81px;
   display: flex;
@@ -291,8 +300,18 @@ body {
   justify-content: center;
 }
 
-.client > li:nth-child(4) {
+.logo {
+  width: 106px;
+  height: 52.83px;
+  fill: #afb1b8;
+}
+
+.client li:hover {
   border: 1px solid #2196f3;
+}
+
+.client li:hover .logo {
+  fill: var(--brand-color);
 }
 
 .last-part {
@@ -334,7 +353,7 @@ body {
 }
 
 .gray {
-  color: #fff;
+  fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 15px 10px 0 0;
 }
@@ -367,6 +386,8 @@ body {
 .button:focus {
   color: var(--text-light);
   background: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .briefcase {
@@ -381,8 +402,14 @@ body {
 }
 
 .project {
-  flex-basis: calc((100% - 30px) / 3);
+  width: 370px;
   box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-description {
@@ -391,7 +418,8 @@ body {
   letter-spacing: 0.03em;
   background-color: #ffffff;
   width: 370px;
-  border-bottom: 1px solid #eeeeee;
+  padding-left: 24px;
+  box-sizing: border-box;
 }
 
 .project-title {
@@ -400,7 +428,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-  width: 270px;
+  width: 370px;
+  padding-left: 24px;
+  box-sizing: border-box;
 }
 
 .findus {
